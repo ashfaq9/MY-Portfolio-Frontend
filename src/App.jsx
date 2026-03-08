@@ -749,7 +749,7 @@ const Contact = () => {
       message: form.message.value.trim(),
     };
     try {
-      const res = await fetch('https://my-portfolio-backend.onrender.com/api/contact', {
+      const res = await fetch('https://my-portfolio-server-nh72.onrender.com/api/contact', {
         method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload),
       });
       const data = await res.json();
